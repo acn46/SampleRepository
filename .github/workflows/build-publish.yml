@@ -19,7 +19,7 @@ jobs:
          uses: actions/setup-node@v3
            
        - name: Set CLI Config
-         run: jf npm-config --global=true --repo-resolve=salesdemo-npm --repo-deploy=salesdemo-npm
+         run: jf npm-config --global=true --repo-resolve=salesdemo-npm --repo-deploy=salesdemo-npm/useast
            
        - name: Install Deps
          run: jf npm install
