@@ -35,6 +35,7 @@ jobs:
           # Collect environment variables for the build
           jf rt build-collect-env
           # Collect VCS details from git and add them to the build
+          #comment to trigger build
           jf rt build-add-git
           # Publish build info
           jf rt build-publish
