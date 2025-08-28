@@ -1,4 +1,4 @@
-name: "JFrog Integration Example"
+name: "JFrog Integration - US East"
 on: push
 
 jobs:
