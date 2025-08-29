@@ -1,4 +1,4 @@
-name: "US-East/Sample Repository"
+name: "US-East Sample Repository"
 on: push
 
 jobs:
