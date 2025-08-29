@@ -1,4 +1,4 @@
-name: "JFrog Integration - US East"
+name: "US-East/Sample Repository"
 on: push
 
 jobs:
@@ -14,13 +14,12 @@ jobs:
          env:  
            JF_URL: ${{ vars.JF_URL }}
            JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
-           JF_PROJECT: ${{vars.JF_PROJECT_KEY}}
            
        - name: Setup Node npm
          uses: actions/setup-node@v3
            
        - name: Set CLI Config
-         run: jf npm-config --global=true --repo-resolve=salesdemo-npm --repo-deploy=salesdemo-npm
+         run: jf npm-config --global=true --repo-resolve=salesdemo-npm-prod --repo-deploy=salesdemo-npm-prod
            
        - name: Install Deps
          run: jf npm install
